@@ -1,0 +1,89 @@
+.firstWall{
+    position: fixed;
+    animation-name: zoom;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+    transition: transform .2s;
+}
+
+
+    
+@keyframes zoom{
+    from{
+        margin-top: 0;
+        margin-let: 0;
+    }
+    to{
+        margin-left: -550px;
+        transform: scale(1.6);
+    }
+}
+
+/* @keyframes zoom2{
+    from{
+        margin-top: 0;
+        margin-let: 0;
+    }
+    to{
+        transform: scale(1.6);
+    }
+} */
+
+#gallery{
+    position: fixed;
+    margin-top: -30px;
+    margin-left: -10px;
+    height: 1065px;
+    width: 1800px;
+    z-index: -1;
+}
+
+#frame1{
+    position: fixed;
+    margin-top: 250px;
+    margin-left: 680px;
+    height: 30%;
+    width: 25%;
+    z-index: +5;
+    transition: transform .2s;
+    
+}
+
+#frame2{
+    position: fixed;
+    margin-top: 230px;
+    margin-left: 1150px;
+    height: 35%;
+    width: 15%;
+    z-index: +5;
+    transition: transform .2s;
+}
+
+#frame3{
+    position: fixed;
+    margin-top: 230px;
+    margin-left: 400px;
+    height: 35%;
+    width: 13%;
+    z-index: +5;
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    transform: scale(1.15);
+}
+
+/* #painting{
+    animation-name: zoom2;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+    transition: transform .2s;
+} */
+
+
+
+
