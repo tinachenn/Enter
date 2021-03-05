@@ -109,7 +109,14 @@
     margin-left: 820px;
     height: 17%;
     width: 15%;
-    z-index: +4;
+    z-index: +5;
+    display: inline-block;
+    font-size: 100px;
+    transition: transform .2s;
+}
+
+.bookZoom:hover{
+    transform: scale(1.15);
 }
 
 #frame1{

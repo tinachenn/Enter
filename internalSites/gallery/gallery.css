@@ -1,46 +1,25 @@
 #inside{
     position: fixed;
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: -30px;
+    margin-left: -10px;
     z-index: 10;
-    opacity: 0;
-    animation-name: glow;
+    animation-name: up;
+    animation-delay: 2s;
     animation-iteration-count: 1;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
 }
-
-@keyframes glow{
-    0% {
-        opacity: 100%;
-    }
-    50%{
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-    }
-}
-
-/* @keyframes gone{
-    from{
-        top: 0px;
-        left: 0px;
-    }
-    to{
-        top: -1000px;
-        left: -1000px;
-    }
-} */
 
 #welcome{
-    position: fixed;
+    position: absolute;
     margin-top: 350px;
     margin-left: 135px;
     font-size: 200px;
     color: white;
     font-style: italic;
 }
+
+
 
 #gallery{
     position: fixed;
@@ -49,4 +28,50 @@
     height: 1065px;
     width: 1800px;
     z-index: -1;
+}
+
+@keyframes up{
+    from{
+        margin-top: -30px;
+        margin-left: -10px;
+    }
+    to{
+        margin-top: -1500px;
+        margin-left: -10px;
+        
+    }
+}
+
+#frame1{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 680px;
+    height: 30%;
+    width: 25%;
+    z-index: +5;
+}
+#frame2{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 1150px;
+    height: 35%;
+    width: 15%;
+    z-index: +5;
+}
+#frame3{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 400px;
+    height: 35%;
+    width: 13%;
+    z-index: +5;
+}
+
+
+#wall1{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 325px;
+    z-index: +6;
+    opacity: 0%;
 }

@@ -1,0 +1,49 @@
+#rococo{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 500px;
+    height: 100%;
+    z-index: -1;
+}
+
+#open{
+    position: fixed;
+    margin-top: -30px;
+    margin-left: -10px;
+    z-index: 10;
+    animation-name: up;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+}
+
+#name{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 570px;
+    font-size: 200px;
+    color: white;
+    font-style: italic;
+}
+
+#artist{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 550px;
+    font-size: 100px;
+    color: white;
+}
+
+
+@keyframes up{
+    from{
+        margin-top: -30px;
+        margin-left: -10px;
+    }
+    to{
+        margin-top: -1500px;
+        margin-left: -10px;
+        
+    }
+}
